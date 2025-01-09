@@ -1,30 +1,92 @@
+/*header style*/
 header{
-    font-family:'Courier New', Courier, monospace;
-    border: solid 3px purple;
-    background:#f6e2f6 ;
+    font:bold 25px 'Courier New', Courier, monospace ;
+    color:white;
+    border: solid 3px #542c02;
+    background-image: linear-gradient(to left ,#542c02,#fadfb9);
+    /*background-image:url(../images/background.jpg) ;
+    background-size: contain;
+    background-origin: border-box;*/
     width: auto;
-    padding: 20px;
- /*  margin: 10px 10px 10px 20px; */
     margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+   
+    text-transform: capitalize;
+}
+header p{
+    text-align: center;
+}
+header h1{
+    animation-name: weam;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes weam{
+    0%{
+        translate: 0 0;
+    }
+    50%{
+        translate: 50% 0;
+    }
+    100%{
+        translate: 100% 0;
+    }
+}
+
+/*navigation menu*/
+nav ul {
+    background-color: #fadfb9;
+    text-align: center;
+    padding: 15px;
+}
+nav a{
+    text-decoration:none;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    color: #2b1802;
+    border: solid 3px #542c02;
+    border-radius: 10px;
+    padding: 5px;
+    margin-inline: 60px;
+}
+nav li {
+    display: inline-block;
+}
+nav a:hover {
+ background-color: #ecbf80;
+ transition: 2s ease-in;
+}
+
+/*Footer style*/
+footer a{
+    font :bold 20px 'Courier New', Courier, monospace;
+    color:white;   
+    text-decoration:none;
+    text-transform: capitalize;
+}
+footer p{
+    display: inline-block;
+    margin-inline:25px;
+}
+footer {
+    background-color: #fadfb9;
+    border-top:3px solid #542c02 ;
+    background-image: linear-gradient(to left ,#542c02 ,#fadfb9 );
     border-radius: 20px;
     text-align: center;
-    font-size: 30px;
-    text-transform: capitalize;
+    padding-top: 50px;
+    height: 100px;
+}
+footer a:hover{
+    color: #542c02;
+    transition: 2s ease-in;
 }
 
- footer a{
-    text-decoration:none;
-    font-size: 30px;
-    text-transform: capitalize;
-    font-weight: bold;
-    color: black;
- }
- 
-footer {
-    background-color: #f6e2f6;
-    border-top:3px solid purple ;
-    padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
+body {
+    background-image: linear-gradient(to bottom ,#f5ecdf ,transparent)
 }
-
